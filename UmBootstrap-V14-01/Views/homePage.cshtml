@@ -3,3 +3,511 @@
 @{
 	Layout = null;
 }
+
+@Model.Value("pageTitle")
+@Model.Value("pageDescription")
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- START SEO META DATA -->
+<title>Umbootstrap</title>
+<meta name="description" content="UmBootstrap is an Umbraco Website Starter Kit using Bootstrap Templates and a comprehensive Component Library all available for you to use in your projects" />
+    <meta name="thumbnail" content="https://umbootstrap.com/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg?width=1200&amp;v=1da47e79ff40942" />
+<!-- END SEO META DATA -->
+<!-- START OPEN GRAPH META TAGS -->
+<meta property="og:title" content="Umbootstrap" />
+<meta property="og:description" content="UmBootstrap is an Umbraco Website Starter Kit using Bootstrap Templates and a comprehensive Component Library all available for you to use in your projects" />
+    <meta property="og:image" content="https://umbootstrap.com/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg?width=1200&amp;v=1da47e79ff40942" />
+<!-- END OPEN GRAPH META TAGS -->
+<!-- START TWITTER META TAGS -->
+<meta name="twitter:title" content="Umbootstrap" />
+<meta name="twitter:description" content="UmBootstrap is an Umbraco Website Starter Kit using Bootstrap Templates and a comprehensive Component Library all available for you to use in your projects" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="https://umbootstrap.com/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg?width=1200&amp;v=1da47e79ff40942" />
+<!-- END TWITTER META TAGS -->
+
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+
+    <!-- START HIGHLIGHT JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/github-dark.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <!-- END HIGHLIGHT JS -->
+    <!-- START HIGHLIGHT JS COPY APP (https://github.com/arronhunt/highlightjs-copy) -->
+    <script src="https://unpkg.com/highlightjs-copy@1.0.3/dist/highlightjs-copy.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy@1.0.3/dist/highlightjs-copy.min.css">
+    <script>hljs.addPlugin(new CopyButtonPlugin());</script>
+    <!-- END HIGHLIGHT JS COPY APP -->
+
+
+</head>
+<body data-bgimage="" style="">
+    <div class="document d-flex flex-column justify-content-between">
+    <!-- START UTILITY BAR -->
+    <div class="screen--utility bg-light">
+    <nav class="container-xxl navbar navbar-expand-lg bg-light">
+        <div class="container-fluid justify-content-end" style="gap: 0.5rem">
+            <a type="button" class="btn btn-outline-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" style="margin-bottom: 4px" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                </svg>
+            </a>
+            <a type="button" class="btn btn-outline-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" style="margin-bottom: 4px" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                </svg>
+            </a>
+            <a class="btn btn-outline-secondary" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" style="margin-bottom: 4px" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                </svg><span> 01234 567 891</span>
+            </a>
+        </div>
+    </nav>
+</div>
+    <!-- END UTILITY BAR -->
+    <!-- START HEADER -->
+    
+<header class="screen--header sticky-top shadow-b bg-light pb-1">
+    <nav class="container-xxl navbar navbar-nav navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/media/epymbtm5/logo-umbootstrap.svg?v=1da47e79f3c7044)" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" id="navbarNav">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">In this site</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-lg-end">
+                    <ul class="navbar-nav nav-pills flex-grow-1 flex-lg-grow-0 gap-3">
+                                <li class="nav-item text-center ">
+                                        <a class="nav-link active" href="/">Home</a>
+                                    
+                                </li>
+                                <li class="nav-item text-center ">
+                                        <a class="nav-link " href="/about/">About</a>
+                                    
+                                </li>
+                                <li class="nav-item text-center ">
+                                        <a class="nav-link " href="/layouts/">Layouts</a>
+                                    
+                                </li>
+                                <li class="nav-item text-center ">
+                                        <a class="nav-link " href="/features/">Features</a>
+                                    
+                                </li>
+                                <li class="nav-item text-center ">
+                                        <a class="nav-link " href="/example-section/">Example Section</a>
+                                    
+                                </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- END HEADER -->
+    <main role="main" class="pb-3 flex-grow-1">
+        
+
+<!-- START - BLOCK GRID -->
+
+<!-- START - DEFAULT -->
+    
+
+
+<!-- START - ITEMS -->
+<div class="layout-items d-flex flex-column gap-0">
+            <!-- START - ITEM -->
+
+
+<div class="layout-item py-3" data-bgimage="" style="" data-block-alias="layout12">
+    
+
+
+
+
+
+
+<!-- START - AREAS -->
+<div class="areas grid container" data-areas="primary g-col-12 p-3 rounded-3 " data-ContentUdi="umb://element/498fd587e7f94c079b43f111d86afa27" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout12" data-GridColumns="">
+
+
+
+
+<!-- START - AREA -->
+<div class="area-12 primary g-col-12 p-3 rounded-3 bg-white">
+    
+
+
+<!-- START - ITEMS -->
+<div class="feature-items d-flex flex-column gap-3">
+            <!-- START - ITEM -->
+
+
+    <section class="feature-item featurePageTitleDescription" style="">
+        <div class="feature__body">
+            
+
+<div class="container p-3 mt-3 d-flex justify-content-center">
+    <div class="w-75 text-center">
+        <h1 class="display-4">Umbootstrap</h1>
+        <p class="lead">UmBootstrap is an Umbraco Website Starter Kit using Bootstrap Templates and a comprehensive Component Library all available for you to use in your projects</p>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+
+                                <!-- END - ITEM -->
+</div>
+<!-- END - ITEMS -->
+
+</div>
+<!-- END - AREA -->
+
+
+
+</div>
+
+<!-- END - AREAS -->
+
+
+
+
+</div>
+
+            <!-- END - ITEM -->
+            <!-- START - ITEM -->
+
+
+<div class="layout-item py-3" data-bgimage="" style="background-color: rgba(var(--bs-indigo-rgb-500), 1);" data-block-alias="layout66">
+    
+
+
+
+
+
+
+<!-- START - AREAS -->
+<div class="areas grid container" data-areas="primary g-col-12 g-col-md-6 p-3 rounded-3 secondary g-col-12 g-col-md-6 p-3 rounded-3 " data-ContentUdi="umb://element/7553baae38114e78926a1798288cbc4b" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout66" data-GridColumns="">
+
+
+
+
+<!-- START - AREA -->
+<div class="area-6 primary g-col-12 g-col-md-6 p-3 rounded-3 bg-white">
+    
+
+
+<!-- START - ITEMS -->
+<div class="feature-items d-flex flex-column gap-3">
+            <!-- START - ITEM -->
+
+
+    <section class="feature-item featureImage" style="">
+            <header class="feature__header">
+                    <h2>Welcome</h2>
+                    <p class="lead">Umbootstrap is an Umbraco community project</p>
+            </header>
+        <div class="feature__body">
+            
+
+        <img src="/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg" style="object-fit:cover; width:100%; height:100%;"/>
+
+        </div>
+    </section>
+
+
+                                <!-- END - ITEM -->
+</div>
+<!-- END - ITEMS -->
+
+</div>
+<!-- END - AREA -->
+
+
+
+
+
+
+
+<!-- START - AREA -->
+<div class="area-6 secondary g-col-12 g-col-md-6 p-3 rounded-3 bg-white">
+    
+
+
+<!-- START - ITEMS -->
+<div class="feature-items d-flex flex-column gap-3">
+            <!-- START - ITEM -->
+
+
+    <section class="feature-item featureRichTextEditor" style="">
+            <header class="feature__header">
+                    <h2>Introduction</h2>
+                    <p class="lead">If you are looking for a way to use Bootstrap web page layouts and components in your Umbraco site, you might want to check out this example website.</p>
+            </header>
+        <div class="feature__body">
+            
+
+<p>It shows how to create common Bootstrap elements such as navbar, carousel, cards, forms, and more using C# Razor Umbraco code.</p>
+<p>You can view the source code of each component and copy it to your own site</p>
+<p><a rel="noopener" href="https://www.nuget.org/packages/Umbraco.Community.Templates.UmBootstrap" target="_blank" title="https://www.nuget.org/packages/Umbraco.Community.Templates.UmBootstrap" class="btn btn-primary">Install this Project Template on Nuget</a></p>
+<p><a rel="noopener" href="https://github.com/UmTemplates/UmBootstrap" target="_blank" title="https://github.com/UmTemplates/UmBootstrap" class="btn btn-secondary">Contribute to this project on GitHub</a></p>
+
+        </div>
+            <footer class="feature__footer p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+                    <p><small>All feedback and suggestions are welcome</small></p>
+            </footer>
+    </section>
+
+
+                                <!-- END - ITEM -->
+</div>
+<!-- END - ITEMS -->
+
+</div>
+<!-- END - AREA -->
+
+
+
+</div>
+
+<!-- END - AREAS -->
+
+
+
+
+</div>
+
+            <!-- END - ITEM -->
+            <!-- START - ITEM -->
+
+
+<div class="layout-item py-3" data-bgimage="/media/yuslhhpx/umbraco-background.svg" style="background-image: url(/media/yuslhhpx/umbraco-background.svg);" data-block-alias="layout66">
+    
+
+
+
+
+
+
+<!-- START - AREAS -->
+<div class="areas grid container" data-areas="primary g-col-12 g-col-md-6 p-3 rounded-3 secondary g-col-12 g-col-md-6 p-3 rounded-3 " data-ContentUdi="umb://element/3c1eaad9261f4e3aa532af3df42ee27a" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout66" data-GridColumns="">
+
+
+
+
+<!-- START - AREA -->
+<div class="area-6 primary g-col-12 g-col-md-6 p-3 rounded-3 text-bg-light">
+    
+
+
+<!-- START - ITEMS -->
+<div class="feature-items d-flex flex-column gap-3">
+            <!-- START - ITEM -->
+
+
+    <section class="feature-item featureRichTextEditor" style="">
+            <header class="feature__header">
+                    <h2>Umbraco</h2>
+                    <p class="lead">All the benefits of Umbraco, the friendly CMS, including limitless customisation, great editor experience and hundreds of community built packages</p>
+            </header>
+        <div class="feature__body">
+            
+
+<p>An enhanced back office using Block Preview Package. Edit pages with true WYSIWYG or switch to Sort Mode for a simple view.</p>
+<p>A selection of Layout Templates with examples so you can make your own.</p>
+<p>A comprehensive library of Feature Components available to use in your own projects.</p>
+
+        </div>
+    </section>
+
+
+                                <!-- END - ITEM -->
+            <!-- START - ITEM -->
+
+
+    <section class="feature-item featureImage" style="">
+        <div class="feature__body">
+            
+
+        <img src="/media/pbogjjna/features-image.png" style="object-fit:cover; width:100%; height:100%;"/>
+
+        </div>
+    </section>
+
+
+                                <!-- END - ITEM -->
+</div>
+<!-- END - ITEMS -->
+
+</div>
+<!-- END - AREA -->
+
+
+
+
+
+
+
+<!-- START - AREA -->
+<div class="area-6 secondary g-col-12 g-col-md-6 p-3 rounded-3 text-bg-light">
+    
+
+
+<!-- START - ITEMS -->
+<div class="feature-items d-flex flex-column gap-3">
+            <!-- START - ITEM -->
+
+
+    <section class="feature-item featureRichTextEditor" style="">
+            <header class="feature__header">
+                    <h2>Bootstrap</h2>
+                    <p class="lead">Making use of Bootstraps ready-made components to quickly build and style features common to almost all websites</p>
+            </header>
+        <div class="feature__body">
+            
+
+<p>Customise Layouts and Features in minutes with Bootstraps easy to use Utility Classes.</p>
+<p>Everything from tabbed interfaces, slideshows, card grids all written in Bootstraps responsive components.</p>
+<p>The CSS and JavaScript is taken care of for you but advanced users can dig deeper and customise the existing code or write your own.</p>
+
+        </div>
+    </section>
+
+
+                                <!-- END - ITEM -->
+            <!-- START - ITEM -->
+
+
+    <section class="feature-item featureImage" style="">
+        <div class="feature__body">
+            
+
+        <img src="/media/dewlolr5/code-featurenavigationdescendants.png" style="object-fit:cover; width:100%; height:100%;"/>
+
+        </div>
+    </section>
+
+
+                                <!-- END - ITEM -->
+</div>
+<!-- END - ITEMS -->
+
+</div>
+<!-- END - AREA -->
+
+
+
+</div>
+
+<!-- END - AREAS -->
+
+
+
+
+</div>
+
+            <!-- END - ITEM -->
+            <!-- START - ITEM -->
+
+
+<div class="layout-item py-3" data-bgimage="" style="" data-block-alias="layout8">
+    
+
+
+
+
+
+
+<!-- START - AREAS -->
+<div class="areas grid container" data-areas="g-col-12 g-col-md-8 g-start-1 g-start-md-3 p-3 bg-white primary rounded-3 " data-ContentUdi="umb://element/a14a7557b0d24a7a8102d4e332548d1b" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout8" data-GridColumns="">
+
+
+
+
+<!-- START - AREA -->
+<div class="area-8 g-col-12 g-col-md-8 g-start-1 g-start-md-3 p-3 bg-white primary rounded-3 bg-white">
+    
+
+
+<!-- START - ITEMS -->
+<div class="feature-items d-flex flex-column gap-3">
+            <!-- START - ITEM -->
+
+
+    <section class="feature-item featureRichTextEditor" style="">
+            <header class="feature__header">
+                    <h2>Rapid Application Development</h2>
+                    <p class="lead">Ideal for Rapid Application Development and testing out Umbraco packages</p>
+            </header>
+        <div class="feature__body">
+            
+
+<p>Want to build something fast?</p>
+<p>Want to test a package.</p>
+<p>UmBootstrap gives you a test site with plenty of ready made pages and content in minutes.</p>
+
+        </div>
+    </section>
+
+
+                                <!-- END - ITEM -->
+</div>
+<!-- END - ITEMS -->
+
+</div>
+<!-- END - AREA -->
+
+
+
+</div>
+
+<!-- END - AREAS -->
+
+
+
+
+</div>
+
+            <!-- END - ITEM -->
+</div>
+<!-- END - ITEMS -->
+
+<!-- END - DEFAULT -->
+
+
+
+<!-- END - BLOCK GRID -->
+    </main>
+    <!-- START FOOTER -->
+    
+<footer b-ss9879bxrr class="bg-white footer text-muted">
+    <div b-ss9879bxrr class="container">
+        <p>Special thanks to <a href="https://my.umbhost.net/aff.php?aff=1535">Umbhost</a> and <a href="https://wholething.co.uk/">Wholething</a></p>
+        <p>&copy; 2024 - Copyright UmBootstrap</p>
+    </div>
+</footer>
+    <!-- END FOOTER -->
+    </div>
+    <script integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
