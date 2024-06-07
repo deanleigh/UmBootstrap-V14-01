@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.container {
-  outline: 1px solid red;
-}
-
 /*
     Add overrides stop Bootstraps exisiting variable
 e.g. $body-color: $green;
