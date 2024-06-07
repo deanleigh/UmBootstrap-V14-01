@@ -4,12 +4,6 @@
 	Layout = null;
 }
 
-@Model.Value("pageTitle")
-@Model.Value("pageDescription")
-
-
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,18 +13,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- START SEO META DATA -->
-<title>Umbootstrap</title>
-<meta name="description" content="UmBootstrap is an Umbraco Website Starter Kit using Bootstrap Templates and a comprehensive Component Library all available for you to use in your projects" />
+<title>@Model.Value("pageTitle")</title>
+<meta name="description" content="@Model.Value("pageDescription")" />
     <meta name="thumbnail" content="https://umbootstrap.com/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg?width=1200&amp;v=1da47e79ff40942" />
 <!-- END SEO META DATA -->
 <!-- START OPEN GRAPH META TAGS -->
 <meta property="og:title" content="Umbootstrap" />
-<meta property="og:description" content="UmBootstrap is an Umbraco Website Starter Kit using Bootstrap Templates and a comprehensive Component Library all available for you to use in your projects" />
+<meta property="og:description" content="@Model.Value("pageDescription")" />
     <meta property="og:image" content="https://umbootstrap.com/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg?width=1200&amp;v=1da47e79ff40942" />
 <!-- END OPEN GRAPH META TAGS -->
 <!-- START TWITTER META TAGS -->
 <meta name="twitter:title" content="Umbootstrap" />
-<meta name="twitter:description" content="UmBootstrap is an Umbraco Website Starter Kit using Bootstrap Templates and a comprehensive Component Library all available for you to use in your projects" />
+<meta name="twitter:description" content="@Model.Value("pageDescription")" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image:src" content="https://umbootstrap.com/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg?width=1200&amp;v=1da47e79ff40942" />
 <!-- END TWITTER META TAGS -->
@@ -84,7 +78,7 @@
     <nav class="container-xxl navbar navbar-nav navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
-                <img src="/media/epymbtm5/logo-umbootstrap.svg?v=1da47e79f3c7044)" />
+                <img src="/assets/logo-umbootstrap.svg" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -167,8 +161,8 @@
 
 <div class="container p-3 mt-3 d-flex justify-content-center">
     <div class="w-75 text-center">
-        <h1 class="display-4">Umbootstrap</h1>
-        <p class="lead">UmBootstrap is an Umbraco Website Starter Kit using Bootstrap Templates and a comprehensive Component Library all available for you to use in your projects</p>
+        <h1 class="display-4">@Model.Value("pageTitle")</h1>
+        <p class="lead">@Model.Value("pageDescription")</p>
     </div>
 </div>
 
