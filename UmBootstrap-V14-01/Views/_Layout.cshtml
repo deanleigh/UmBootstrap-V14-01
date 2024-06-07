@@ -1,7 +1,7 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
-	Layout = null;
+    Layout = null;
 }
 
 
@@ -118,9 +118,12 @@
             </nav>
         </header>
         <!-- END HEADER -->
-        @RenderBody()
+        <!-- START MAIN -->
+        <main role="main" class="pb-3 flex-grow-1">
+            @RenderBody()
+        </main>
+        <!-- END MAIN -->
         <!-- START FOOTER -->
-
         <footer b-ss9879bxrr class="bg-white footer text-muted">
             <div b-ss9879bxrr class="container">
                 <p>Special thanks to <a href="https://my.umbhost.net/aff.php?aff=1535">Umbhost</a> and <a href="https://wholething.co.uk/">Wholething</a></p>

@@ -1,382 +1,234 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
-	Layout = "_Layout.cshtml";
+    Layout = "_Layout.cshtml";
 }
-
-    <main role="main" class="pb-3 flex-grow-1">
-        
-
-<!-- START - BLOCK GRID -->
-
-<!-- START - DEFAULT -->
-    
+    <!-- START - BLOCK GRID -->
+    <!-- START - DEFAULT -->
+    <!-- START - ITEMS -->
+    <div class="layout-items d-flex flex-column gap-0">
+        <!-- START - ITEM -->
 
 
-<!-- START - ITEMS -->
-<div class="layout-items d-flex flex-column gap-0">
-            <!-- START - ITEM -->
+        <div class="layout-item py-3" data-bgimage="" style="" data-block-alias="layout12">
 
+            <!-- START - AREAS -->
+            <div class="areas grid container" data-areas="primary g-col-12 p-3 rounded-3 " data-ContentUdi="umb://element/498fd587e7f94c079b43f111d86afa27" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout12" data-GridColumns="">
 
-<div class="layout-item py-3" data-bgimage="" style="" data-block-alias="layout12">
-    
+                <!-- START - AREA -->
+                <div class="area-12 primary g-col-12 p-3 rounded-3 bg-white">
 
+                    <!-- START - ITEMS -->
+                    <div class="feature-items d-flex flex-column gap-3">
+                        <!-- START - ITEM -->
 
+                        <section class="feature-item featurePageTitleDescription" style="">
+                            <div class="feature__body">
 
+                                <div class="container p-3 mt-3 d-flex justify-content-center">
+                                    <div class="w-75 text-center">
+                                        <h1 class="display-4">@Model.Value("pageTitle")</h1>
+                                        <p class="lead">@Model.Value("pageDescription")</p>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </section>
 
+                        <!-- END - ITEM -->
+                    </div>
+                    <!-- END - ITEMS -->
 
-<!-- START - AREAS -->
-<div class="areas grid container" data-areas="primary g-col-12 p-3 rounded-3 " data-ContentUdi="umb://element/498fd587e7f94c079b43f111d86afa27" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout12" data-GridColumns="">
+                </div>
+                <!-- END - AREA -->
 
+            </div>
+            <!-- END - AREAS -->
 
+        </div>
+        <!-- END - ITEM -->
 
+        <!-- START - ITEM -->
+        <div class="layout-item py-3" data-bgimage="" style="background-color: rgba(var(--bs-indigo-rgb-500), 1);" data-block-alias="layout66">
 
-<!-- START - AREA -->
-<div class="area-12 primary g-col-12 p-3 rounded-3 bg-white">
-    
+            <!-- START - AREAS -->
+            <div class="areas grid container" data-areas="primary g-col-12 g-col-md-6 p-3 rounded-3 secondary g-col-12 g-col-md-6 p-3 rounded-3 " data-ContentUdi="umb://element/7553baae38114e78926a1798288cbc4b" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout66" data-GridColumns="">
 
+                <!-- START - AREA -->
+                <div class="area-6 primary g-col-12 g-col-md-6 p-3 rounded-3 bg-white">
 
-<!-- START - ITEMS -->
-<div class="feature-items d-flex flex-column gap-3">
-            <!-- START - ITEM -->
+                    <!-- START - ITEMS -->
+                    <div class="feature-items d-flex flex-column gap-3">
 
+                        <!-- START - ITEM -->
+                        <section class="feature-item featureImage" style="">
+                            <header class="feature__header">
+                                <h2>Welcome</h2>
+                                <p class="lead">Umbootstrap is an Umbraco community project</p>
+                            </header>
+                            <div class="feature__body">
+                                <img src="/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg" style="object-fit:cover; width:100%; height:100%;" />
+                            </div>
+                        </section>
+                        <!-- END - ITEM -->
+                    </div>
+                    <!-- END - ITEMS -->
+                </div>
+                <!-- END - AREA -->
 
-    <section class="feature-item featurePageTitleDescription" style="">
-        <div class="feature__body">
-            
+                <!-- START - AREA -->
+                <div class="area-6 secondary g-col-12 g-col-md-6 p-3 rounded-3 bg-white">
 
-<div class="container p-3 mt-3 d-flex justify-content-center">
-    <div class="w-75 text-center">
-        <h1 class="display-4">@Model.Value("pageTitle")</h1>
-        <p class="lead">@Model.Value("pageDescription")</p>
+                    <!-- START - ITEMS -->
+                    <div class="feature-items d-flex flex-column gap-3">
+
+                        <!-- START - ITEM -->
+                        <section class="feature-item featureRichTextEditor" style="">
+                            <header class="feature__header">
+                                <h2>Introduction</h2>
+                                <p class="lead">If you are looking for a way to use Bootstrap web page layouts and components in your Umbraco site, you might want to check out this example website.</p>
+                            </header>
+                            <div class="feature__body">
+                                <p>It shows how to create common Bootstrap elements such as navbar, carousel, cards, forms, and more using C# Razor Umbraco code.</p>
+                                <p>You can view the source code of each component and copy it to your own site</p>
+                                <p><a rel="noopener" href="https://www.nuget.org/packages/Umbraco.Community.Templates.UmBootstrap" target="_blank" title="https://www.nuget.org/packages/Umbraco.Community.Templates.UmBootstrap" class="btn btn-primary">Install this Project Template on Nuget</a></p>
+                                <p><a rel="noopener" href="https://github.com/UmTemplates/UmBootstrap" target="_blank" title="https://github.com/UmTemplates/UmBootstrap" class="btn btn-secondary">Contribute to this project on GitHub</a></p>
+                            </div>
+                            <footer class="feature__footer p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+                                <p><small>All feedback and suggestions are welcome</small></p>
+                            </footer>
+                        </section>
+                        <!-- END - ITEM -->
+
+                    </div>
+                    <!-- END - ITEMS -->
+
+                </div>
+                <!-- END - AREA -->
+
+            </div>
+            <!-- END - AREAS -->
+
+        </div>
+        <!-- END - ITEM -->
+
+        <!-- START - ITEM -->
+        <div class="layout-item py-3" data-bgimage="/media/yuslhhpx/umbraco-background.svg" style="background-image: url(/media/yuslhhpx/umbraco-background.svg);" data-block-alias="layout66">
+
+            <!-- START - AREAS -->
+            <div class="areas grid container" data-areas="primary g-col-12 g-col-md-6 p-3 rounded-3 secondary g-col-12 g-col-md-6 p-3 rounded-3 " data-ContentUdi="umb://element/3c1eaad9261f4e3aa532af3df42ee27a" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout66" data-GridColumns="">
+
+                <!-- START - AREA -->
+                <div class="area-6 primary g-col-12 g-col-md-6 p-3 rounded-3 text-bg-light">
+
+                    <!-- START - ITEMS -->
+                    <div class="feature-items d-flex flex-column gap-3">
+
+                        <!-- START - ITEM -->
+                        <section class="feature-item featureRichTextEditor" style="">
+                            <header class="feature__header">
+                                <h2>Umbraco</h2>
+                                <p class="lead">All the benefits of Umbraco, the friendly CMS, including limitless customisation, great editor experience and hundreds of community built packages</p>
+                            </header>
+                            <div class="feature__body">
+                                <p>An enhanced back office using Block Preview Package. Edit pages with true WYSIWYG or switch to Sort Mode for a simple view.</p>
+                                <p>A selection of Layout Templates with examples so you can make your own.</p>
+                                <p>A comprehensive library of Feature Components available to use in your own projects.</p>
+                            </div>
+                        </section>
+                        <!-- END - ITEM -->
+
+                        <!-- START - ITEM -->
+                        <section class="feature-item featureImage" style="">
+                            <div class="feature__body">
+                                <img src="/media/pbogjjna/features-image.png" style="object-fit:cover; width:100%; height:100%;" />
+                            </div>
+                        </section>
+                        <!-- END - ITEM -->
+                    </div>
+                    <!-- END - ITEMS -->
+                </div>
+                <!-- END - AREA -->
+
+                <!-- START - AREA -->
+                <div class="area-6 secondary g-col-12 g-col-md-6 p-3 rounded-3 text-bg-light">
+
+                    <!-- START - ITEMS -->
+                    <div class="feature-items d-flex flex-column gap-3">
+                        <!-- START - ITEM -->
+
+                        <section class="feature-item featureRichTextEditor" style="">
+                            <header class="feature__header">
+                                <h2>Bootstrap</h2>
+                                <p class="lead">Making use of Bootstraps ready-made components to quickly build and style features common to almost all websites</p>
+                            </header>
+                            <div class="feature__body">
+                                <p>Customise Layouts and Features in minutes with Bootstraps easy to use Utility Classes.</p>
+                                <p>Everything from tabbed interfaces, slideshows, card grids all written in Bootstraps responsive components.</p>
+                                <p>The CSS and JavaScript is taken care of for you but advanced users can dig deeper and customise the existing code or write your own.</p>
+                            </div>
+                        </section>
+                        <!-- END - ITEM -->
+
+                        <!-- START - ITEM -->
+                        <section class="feature-item featureImage" style="">
+                            <div class="feature__body">
+                                <img src="/media/dewlolr5/code-featurenavigationdescendants.png" style="object-fit:cover; width:100%; height:100%;" />
+                            </div>
+                        </section>
+                        <!-- END - ITEM -->
+
+                    </div>
+                    <!-- END - ITEMS -->
+
+                </div>
+                <!-- END - AREA -->
+
+            </div>
+            <!-- END - AREAS -->
+
+        </div>
+        <!-- END - ITEM -->
+
+        <!-- START - ITEM -->
+        <div class="layout-item py-3" data-bgimage="" style="" data-block-alias="layout8">
+
+            <!-- START - AREAS -->
+            <div class="areas grid container" data-areas="g-col-12 g-col-md-8 g-start-1 g-start-md-3 p-3 bg-white primary rounded-3 " data-ContentUdi="umb://element/a14a7557b0d24a7a8102d4e332548d1b" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout8" data-GridColumns="">
+
+                <!-- START - AREA -->
+                <div class="area-8 g-col-12 g-col-md-8 g-start-1 g-start-md-3 p-3 bg-white primary rounded-3 bg-white">
+
+                    <!-- START - ITEMS -->
+                    <div class="feature-items d-flex flex-column gap-3">
+
+                        <!-- START - ITEM -->
+                        <section class="feature-item featureRichTextEditor" style="">
+                            <header class="feature__header">
+                                <h2>Rapid Application Development</h2>
+                                <p class="lead">Ideal for Rapid Application Development and testing out Umbraco packages</p>
+                            </header>
+                            <div class="feature__body">
+                                <p>Want to build something fast?</p>
+                                <p>Want to test a package.</p>
+                                <p>UmBootstrap gives you a test site with plenty of ready made pages and content in minutes.</p>
+                            </div>
+                        </section>
+
+                        <!-- END - ITEM -->
+                    </div>
+                    <!-- END - ITEMS -->
+
+                </div>
+                <!-- END - AREA -->
+
+            </div>
+            <!-- END - AREAS -->
+
+        </div>
+        <!-- END - ITEM -->
     </div>
-</div>
+    <!-- END - ITEMS -->
+    <!-- END - DEFAULT -->
+    <!-- END - BLOCK GRID -->
 
-        </div>
-    </section>
-
-
-                                <!-- END - ITEM -->
-</div>
-<!-- END - ITEMS -->
-
-</div>
-<!-- END - AREA -->
-
-
-
-</div>
-
-<!-- END - AREAS -->
-
-
-
-
-</div>
-
-            <!-- END - ITEM -->
-            <!-- START - ITEM -->
-
-
-<div class="layout-item py-3" data-bgimage="" style="background-color: rgba(var(--bs-indigo-rgb-500), 1);" data-block-alias="layout66">
-    
-
-
-
-
-
-
-<!-- START - AREAS -->
-<div class="areas grid container" data-areas="primary g-col-12 g-col-md-6 p-3 rounded-3 secondary g-col-12 g-col-md-6 p-3 rounded-3 " data-ContentUdi="umb://element/7553baae38114e78926a1798288cbc4b" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout66" data-GridColumns="">
-
-
-
-
-<!-- START - AREA -->
-<div class="area-6 primary g-col-12 g-col-md-6 p-3 rounded-3 bg-white">
-    
-
-
-<!-- START - ITEMS -->
-<div class="feature-items d-flex flex-column gap-3">
-            <!-- START - ITEM -->
-
-
-    <section class="feature-item featureImage" style="">
-            <header class="feature__header">
-                    <h2>Welcome</h2>
-                    <p class="lead">Umbootstrap is an Umbraco community project</p>
-            </header>
-        <div class="feature__body">
-            
-
-        <img src="/media/oeedxwqe/firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg" style="object-fit:cover; width:100%; height:100%;"/>
-
-        </div>
-    </section>
-
-
-                                <!-- END - ITEM -->
-</div>
-<!-- END - ITEMS -->
-
-</div>
-<!-- END - AREA -->
-
-
-
-
-
-
-
-<!-- START - AREA -->
-<div class="area-6 secondary g-col-12 g-col-md-6 p-3 rounded-3 bg-white">
-    
-
-
-<!-- START - ITEMS -->
-<div class="feature-items d-flex flex-column gap-3">
-            <!-- START - ITEM -->
-
-
-    <section class="feature-item featureRichTextEditor" style="">
-            <header class="feature__header">
-                    <h2>Introduction</h2>
-                    <p class="lead">If you are looking for a way to use Bootstrap web page layouts and components in your Umbraco site, you might want to check out this example website.</p>
-            </header>
-        <div class="feature__body">
-            
-
-<p>It shows how to create common Bootstrap elements such as navbar, carousel, cards, forms, and more using C# Razor Umbraco code.</p>
-<p>You can view the source code of each component and copy it to your own site</p>
-<p><a rel="noopener" href="https://www.nuget.org/packages/Umbraco.Community.Templates.UmBootstrap" target="_blank" title="https://www.nuget.org/packages/Umbraco.Community.Templates.UmBootstrap" class="btn btn-primary">Install this Project Template on Nuget</a></p>
-<p><a rel="noopener" href="https://github.com/UmTemplates/UmBootstrap" target="_blank" title="https://github.com/UmTemplates/UmBootstrap" class="btn btn-secondary">Contribute to this project on GitHub</a></p>
-
-        </div>
-            <footer class="feature__footer p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-                    <p><small>All feedback and suggestions are welcome</small></p>
-            </footer>
-    </section>
-
-
-                                <!-- END - ITEM -->
-</div>
-<!-- END - ITEMS -->
-
-</div>
-<!-- END - AREA -->
-
-
-
-</div>
-
-<!-- END - AREAS -->
-
-
-
-
-</div>
-
-            <!-- END - ITEM -->
-            <!-- START - ITEM -->
-
-
-<div class="layout-item py-3" data-bgimage="/media/yuslhhpx/umbraco-background.svg" style="background-image: url(/media/yuslhhpx/umbraco-background.svg);" data-block-alias="layout66">
-    
-
-
-
-
-
-
-<!-- START - AREAS -->
-<div class="areas grid container" data-areas="primary g-col-12 g-col-md-6 p-3 rounded-3 secondary g-col-12 g-col-md-6 p-3 rounded-3 " data-ContentUdi="umb://element/3c1eaad9261f4e3aa532af3df42ee27a" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout66" data-GridColumns="">
-
-
-
-
-<!-- START - AREA -->
-<div class="area-6 primary g-col-12 g-col-md-6 p-3 rounded-3 text-bg-light">
-    
-
-
-<!-- START - ITEMS -->
-<div class="feature-items d-flex flex-column gap-3">
-            <!-- START - ITEM -->
-
-
-    <section class="feature-item featureRichTextEditor" style="">
-            <header class="feature__header">
-                    <h2>Umbraco</h2>
-                    <p class="lead">All the benefits of Umbraco, the friendly CMS, including limitless customisation, great editor experience and hundreds of community built packages</p>
-            </header>
-        <div class="feature__body">
-            
-
-<p>An enhanced back office using Block Preview Package. Edit pages with true WYSIWYG or switch to Sort Mode for a simple view.</p>
-<p>A selection of Layout Templates with examples so you can make your own.</p>
-<p>A comprehensive library of Feature Components available to use in your own projects.</p>
-
-        </div>
-    </section>
-
-
-                                <!-- END - ITEM -->
-            <!-- START - ITEM -->
-
-
-    <section class="feature-item featureImage" style="">
-        <div class="feature__body">
-            
-
-        <img src="/media/pbogjjna/features-image.png" style="object-fit:cover; width:100%; height:100%;"/>
-
-        </div>
-    </section>
-
-
-                                <!-- END - ITEM -->
-</div>
-<!-- END - ITEMS -->
-
-</div>
-<!-- END - AREA -->
-
-
-
-
-
-
-
-<!-- START - AREA -->
-<div class="area-6 secondary g-col-12 g-col-md-6 p-3 rounded-3 text-bg-light">
-    
-
-
-<!-- START - ITEMS -->
-<div class="feature-items d-flex flex-column gap-3">
-            <!-- START - ITEM -->
-
-
-    <section class="feature-item featureRichTextEditor" style="">
-            <header class="feature__header">
-                    <h2>Bootstrap</h2>
-                    <p class="lead">Making use of Bootstraps ready-made components to quickly build and style features common to almost all websites</p>
-            </header>
-        <div class="feature__body">
-            
-
-<p>Customise Layouts and Features in minutes with Bootstraps easy to use Utility Classes.</p>
-<p>Everything from tabbed interfaces, slideshows, card grids all written in Bootstraps responsive components.</p>
-<p>The CSS and JavaScript is taken care of for you but advanced users can dig deeper and customise the existing code or write your own.</p>
-
-        </div>
-    </section>
-
-
-                                <!-- END - ITEM -->
-            <!-- START - ITEM -->
-
-
-    <section class="feature-item featureImage" style="">
-        <div class="feature__body">
-            
-
-        <img src="/media/dewlolr5/code-featurenavigationdescendants.png" style="object-fit:cover; width:100%; height:100%;"/>
-
-        </div>
-    </section>
-
-
-                                <!-- END - ITEM -->
-</div>
-<!-- END - ITEMS -->
-
-</div>
-<!-- END - AREA -->
-
-
-
-</div>
-
-<!-- END - AREAS -->
-
-
-
-
-</div>
-
-            <!-- END - ITEM -->
-            <!-- START - ITEM -->
-
-
-<div class="layout-item py-3" data-bgimage="" style="" data-block-alias="layout8">
-    
-
-
-
-
-
-
-<!-- START - AREAS -->
-<div class="areas grid container" data-areas="g-col-12 g-col-md-8 g-start-1 g-start-md-3 p-3 bg-white primary rounded-3 " data-ContentUdi="umb://element/a14a7557b0d24a7a8102d4e332548d1b" data-Content="Umbraco.Cms.Web.Common.PublishedModels.Layout8" data-GridColumns="">
-
-
-
-
-<!-- START - AREA -->
-<div class="area-8 g-col-12 g-col-md-8 g-start-1 g-start-md-3 p-3 bg-white primary rounded-3 bg-white">
-    
-
-
-<!-- START - ITEMS -->
-<div class="feature-items d-flex flex-column gap-3">
-            <!-- START - ITEM -->
-
-
-    <section class="feature-item featureRichTextEditor" style="">
-            <header class="feature__header">
-                    <h2>Rapid Application Development</h2>
-                    <p class="lead">Ideal for Rapid Application Development and testing out Umbraco packages</p>
-            </header>
-        <div class="feature__body">
-            
-
-<p>Want to build something fast?</p>
-<p>Want to test a package.</p>
-<p>UmBootstrap gives you a test site with plenty of ready made pages and content in minutes.</p>
-
-        </div>
-    </section>
-
-
-                                <!-- END - ITEM -->
-</div>
-<!-- END - ITEMS -->
-
-</div>
-<!-- END - AREA -->
-
-
-
-</div>
-
-<!-- END - AREAS -->
-
-
-
-
-</div>
-
-            <!-- END - ITEM -->
-</div>
-<!-- END - ITEMS -->
-
-<!-- END - DEFAULT -->
-
-
-
-<!-- END - BLOCK GRID -->
-    </main>
-   
