@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem>
+@using Umbraco.Cms.Core.PropertyEditors.ValueConverters;
+@using Umbraco.Cms.Core.PropertyEditors;
+
+@{
+    // No layout by default
+    Layout = null;
+}
+
+<div class="layout-item py-3" data-block-alias="@Model.Content.ContentType.Alias" style="background-color: #fcc;">
+    @RenderBody()
+    @* <h2>@myColor</h2> *@
+</div>
