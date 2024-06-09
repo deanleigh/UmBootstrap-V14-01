@@ -4,7 +4,33 @@
     if (Model?.Any() != true) { return; }
 }
 
-<div class="umb-block-grid__layout-container">
+
+<!-- START - ITEMS -->
+<div class="d-flex flex-column ">
+    @foreach (var item in Model)
+    {
+        {
+            var partialViewName = "blockgrid/Components/" + item.Content.ContentType.Alias;
+            try
+            {
+                <!-- START - ITEM -->
+                @await Html.PartialAsync(partialViewName, item)
+                <!-- END - ITEM -->
+            }
+            catch (InvalidOperationException)
+            {
+                <p>
+                    <strong>Could not render component of type: @(item.Content.ContentType.Alias)</strong>
+                    <br />
+                    This likely happened because the partial view <em>@partialViewName</em> could not be found.
+                </p>
+            }
+        }
+    }
+</div>
+<!-- END - ITEMS -->
+
+@* <div class="umb-block-grid__layout-container">
     @foreach (var item in Model)
     {
         
@@ -33,4 +59,4 @@
             }
         </div>
     }
-</div>
+</div> *@
