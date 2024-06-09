@@ -3,6 +3,11 @@
 @{
     Layout = "_Layout.cshtml";
 }
+
+<p>Block Grid start</p>
+@await Html.GetBlockGridHtmlAsync(Model, "contentBlockGrid")
+<p>Block Grid end</p>
+
     <!-- START - BLOCK GRID -->
     <!-- START - DEFAULT -->
     <!-- START - ITEMS -->
