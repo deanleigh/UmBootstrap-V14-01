@@ -44,5 +44,9 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
+<<<<<<< HEAD
         publish-profile: ${{ secrets.UmBootstrap_V14_01_2873 }}
+=======
+        publish-profile: ${{ secrets.UmBootstrap_V14_01_E62E }}
+>>>>>>> 682c8a151423dd8400b05f131f872380bdcded88
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
