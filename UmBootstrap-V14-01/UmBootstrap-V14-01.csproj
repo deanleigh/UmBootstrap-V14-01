@@ -5,6 +5,14 @@
     <Nullable>enable</Nullable>
     <RootNamespace>UmBootstrap_V14_01</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="wwwroot\media\keadrpe3\firefly-business-people-audience-watching-a-talk-at-a-tech-conference_style-flat-colours-flat-des-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="umbraco\Data\Umbraco.sqlite.db" />
+    <None Include="umbraco\Data\Umbraco.sqlite.db-shm" />
+    <None Include="umbraco\Data\Umbraco.sqlite.db-wal" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="14.0.0" />
