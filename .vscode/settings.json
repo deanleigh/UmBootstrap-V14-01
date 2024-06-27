@@ -1,0 +1,4 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "UmBootstrap-V14-01/bin/Release/net8.0/publish"
+}
