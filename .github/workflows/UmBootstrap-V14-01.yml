@@ -1,10 +1,10 @@
-name: Build and deploy .NET Core application to Web App UmBootstrap-V14-01-2024-06-28
+name: Build and deploy .NET Core application to Web App UmBootstrap-V14-01
 on:
   push:
     branches:
     - master
 env:
-  AZURE_WEBAPP_NAME: UmBootstrap-V14-01-2024-06-28
+  AZURE_WEBAPP_NAME: UmBootstrap-V14-01
   AZURE_WEBAPP_PACKAGE_PATH: UmBootstrap-V14-01\published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 8.0.x
@@ -44,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.UmBootstrap_V14_01_2024_06_28_91BB }}
+        publish-profile: ${{ secrets.UmBootstrap_V14_01_2608 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
