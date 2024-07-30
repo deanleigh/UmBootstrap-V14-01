@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /UmBootstrap-V14-01/umbraco/Data/Umbraco.sqlite.db
+/UmBootstrap-V14-01/umbraco/Data/Umbraco.sqlite.db-wal
