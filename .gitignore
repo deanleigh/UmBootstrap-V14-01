@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /UmBootstrap-V14-01/umbraco/Data/Umbraco.sqlite.db
 /UmBootstrap-V14-01/umbraco/Data/Umbraco.sqlite.db-wal
+/UmBootstrap-V14-01/umbraco/Data/Umbraco.sqlite.db-shm
