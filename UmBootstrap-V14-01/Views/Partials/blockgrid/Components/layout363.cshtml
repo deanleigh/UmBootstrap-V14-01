@@ -1,8 +1,10 @@
 ﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem>
 @using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Community.BlockPreview.Extensions
 @{
 	Layout = "_Layout_Layouts.cshtml";
 }
 
-@await Html.GetBlockGridItemAreasHtmlAsync(Model)
+@* @await Html.GetBlockGridItemAreasHtmlAsync(Model) *@
+@await Html.GetPreviewBlockGridItemAreasHtmlAsync(Model)
 
