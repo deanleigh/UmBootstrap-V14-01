@@ -1,9 +1,10 @@
-﻿@using Umbraco.Extensions
+﻿@using Umbraco.Community.BlockPreview.Extensions
+@using Umbraco.Extensions
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridArea>
 
 <!-- START - AREA -->
 <div class="area-@Model.ColumnSpan @Model.Alias">
-    @await Html.GetBlockGridItemsHtmlAsync(Model)
+    @await Html.GetPreviewBlockGridItemsHtmlAsync(Model)
 </div>
 <!-- END - AREA -->
 
